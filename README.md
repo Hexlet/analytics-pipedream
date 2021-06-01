@@ -10,7 +10,7 @@ npm install analytics analytics-plugin-pipedream
 
 ## How to use
 
-```
+```javascript
 import Analytics from 'analytics';
 import pipedreamPlugin from 'analytics-plugin-pipedream';
 
