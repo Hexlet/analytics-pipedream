@@ -1,5 +1,5 @@
 {
-  "name": "analytics-plugin-pipedream",
+  "name": "@hexlet/analytics-plugin-pipedream",
   "version": "1.0.0",
   "description": "plugin for analytics",
   "main": "dist/index.js",
