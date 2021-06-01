@@ -13,6 +13,5 @@ jobs:
         node-version: '14.x'
         registry-url: 'https://registry.npmjs.org'
     - run: npm install
-    - run: |
-        npm config set //registry.npmjs.org/:_authToken ${{ secrets.npmjs_com }}
-        make publish
+    - run: npm publish --access public
+      env: NODE_AUTH_TOKEN: ${{ secrets.npmjs_com }}
