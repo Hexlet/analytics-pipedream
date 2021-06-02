@@ -14,12 +14,15 @@ npm install analytics analytics-plugin-pipedream
 import Analytics from 'analytics';
 import pipedreamPlugin from 'analytics-plugin-pipedream';
 
+const pipedreamConfig = {
+  event_one: 'https://triggerUniquePathOne.m.pipedream.net', // this must be pipedream workflow trigger url
+  event_two: 'https://triggerUniquePathTwo.m.pipedream.net',
+};
+
 const analytics = Analytics({
   app: 'my-app',
   plugins: [
-    pipedreamPlugin({
-      triggerUrl: 'https://triggerUniquePath.m.pipedream.net', // this must be pipedream workflow trigger url
-    }),
+    pipedreamPlugin(pipedreamConfig),
   ],
 });
 
