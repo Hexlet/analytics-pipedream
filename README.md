@@ -15,7 +15,7 @@ import Analytics from 'analytics';
 import pipedreamPlugin from 'analytics-plugin-pipedream';
 
 const pipedreamConfig = {
-  event_one: 'https://triggerUniquePathOne.m.pipedream.net', // this must be pipedream workflow trigger url
+  event_one: 'https://triggerUniquePathOne.m.pipedream.net', // this must be pipedream trigger url
   event_two: 'https://triggerUniquePathTwo.m.pipedream.net',
 };
 
@@ -29,5 +29,24 @@ const analytics = Analytics({
 });
 
 // track an event
-analytics.track('registration', { email: 'user@example.com' });
+analytics.track('signed_up', { email: 'user@example.com' });
+```
+
+In browser
+
+```html
+<script src="https://unpkg.com/analytics/dist/analytics.min.js"></script>
+<script src="https://unpkg.com/@hexlet/analytics-plugin-pipedream/dist/main.js"></script>
+<script>
+  var Analytics = _analytics.init({
+    app: 'my-app',
+    plugins: [
+      PipedreamPlugin({
+        workflows: pipedreamConfig,
+      }),
+    ],
+  });
+
+  Analytics.track('signed_up', { email: 'user@example.com' }); // track an event
+</script>
 ```
