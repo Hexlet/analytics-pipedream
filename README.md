@@ -12,7 +12,7 @@ npm install analytics @hexlet/analytics-plugin-pipedream
 
 ```javascript
 import Analytics from 'analytics';
-import pipedreamPlugin from 'analytics-plugin-pipedream';
+import pipedreamPlugin from '@hexlet/analytics-plugin-pipedream';
 
 const pipedreamConfig = {
   event_one: 'https://triggerUniquePathOne.m.pipedream.net', // this must be pipedream trigger url
