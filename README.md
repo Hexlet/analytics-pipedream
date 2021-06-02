@@ -22,10 +22,12 @@ const pipedreamConfig = {
 const analytics = Analytics({
   app: 'my-app',
   plugins: [
-    pipedreamPlugin(pipedreamConfig),
+    pipedreamPlugin({
+      workflows: pipedreamConfig,
+    }),
   ],
 });
 
 // track an event
-analytics.track('registration', { email: user@example.com });
+analytics.track('registration', { email: 'user@example.com' });
 ```

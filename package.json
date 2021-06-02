@@ -1,6 +1,6 @@
 {
   "name": "@hexlet/analytics-plugin-pipedream",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "plugin for analytics",
   "main": "dist/main.js",
   "scripts": {
@@ -35,6 +35,7 @@
     "webpack-cli": "^4.7.0"
   },
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "lodash": "^4.17.21"
   }
 }
