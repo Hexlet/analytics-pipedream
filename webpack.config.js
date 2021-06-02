@@ -4,6 +4,7 @@ module.exports = {
     library: {
       name: 'PipedreamPlugin',
       type: 'window',
+      export: 'default',
     },
   },
 

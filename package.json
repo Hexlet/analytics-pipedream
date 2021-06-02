@@ -1,6 +1,6 @@
 {
   "name": "@hexlet/analytics-plugin-pipedream",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "plugin for analytics",
   "main": "dist/main.js",
   "scripts": {
