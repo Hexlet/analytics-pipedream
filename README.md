@@ -5,7 +5,7 @@ This library exports the Pipedream plugin for the [analytics](https://www.npmjs.
 ## Installation
 
 ```
-npm install analytics analytics-plugin-pipedream
+npm install analytics @hexlet/analytics-plugin-pipedream
 ```
 
 ## How to use
